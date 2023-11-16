@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/dist/output.css">
+  <script src="./src/js/script.js" defer></script>
+</head>
+<body class="bg-Dark_Blue font-Manrape min-h-screen grid place-items-center px-3">
+  <main class="bg-Dark_Grayish_Blue w-full text-center pt-12 px-6 pb-2 rounded-xl max-w-[367px] md:max-w-[545px]">
+    <article class="relative">
+      <h1 class="text-Neon_Green uppercase text-xs tracking-[3px] mb-6">Advice # <span id="Advice_num">0</span></h1>
+      <blockquote class="mb-5 md:mb-8 ">
+        <p id= "Advice" class="before:content-['\201C'] after:content-['\201D'] text-Light_Cyan text-2xl md:text-3xl">Roll the Dice for Advice
+        </p>
+      </blockquote>
+      <img src="./images/pattern-divider-desktop.svg" alt="" class="mx-auto hidden md:block">
+      <img id = "divider" src="./images/pattern-divider-mobile.svg" alt="divider" class="mx-auto md:hidden">
+      <button  id="dice" class="bg-Neon_Green rounded-full p-4 w-14 static translate-x-[1%] translate-y-[65%] hover:shadow-[0px_0px_20px_5px_rgba(82,255,168,0.57)] active:scale-50 transition-all duration-200 ease-linear">
+        <img class="mx-auto" src="./images/icon-dice.svg" alt="icon-dice">
+      </button>
+    </article>
+  </main>
+  <footer class="text-sm text-center absolute bottom-1">
+    <p class="text-Light_Cyan">
+      Challenge by <a class="text-gray-700" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="text-green-700" href="https://www.github.com/Ashraful-Fuqha">MjafarsadiqD</a>.
+    </p>
+  </footer>
+</body>
+</html>
